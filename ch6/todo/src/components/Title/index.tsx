@@ -1,21 +1,23 @@
 import styled from '@emotion/styled';
-import { Title } from 'components/Title';
 
 const Container = styled.div`
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  background-color: #eeeeee;
 `;
 
-function App() {
-  return (
-    <Container>
-      <Title label='할 일 목록' />
-    </Container>
-  );
+const Label = styled.h1`
+  margin-top: 0;
+`;
+
+interface Props {
+  readonly label: string;
 }
 
-export default App;
+export const Title = ({ label }: Props) => {
+  return (
+    <Container>
+      <Label>{label}</Label>
+    </Container>
+  );
+};
