@@ -15,7 +15,7 @@ function App() {
   return (
     <Container>
       <Title label='할 일 목록' />
-      <Button />
+      <Button label='삭제' />
     </Container>
   );
 }
