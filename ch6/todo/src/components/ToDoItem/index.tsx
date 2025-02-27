@@ -5,7 +5,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-botton: 16px;
+  margin-bottom: 16px;
 `;
 
 const Label = styled.div`
