@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
-import { Title } from 'components/Title';
-import { ToDoList } from 'components/ToDoList';
 import { useState } from 'react';
+import { DataView } from 'components/DataView';
 
 const Container = styled.div`
   height: 100vh;
@@ -25,8 +24,7 @@ function App() {
 
   return (
     <Container>
-      <Title label='할 일 목록' />
-      <ToDoList toDoList={toDoList} onDelete={onDelete} />
+      <DataView toDoList={toDoList} onDelete={onDelete} />
     </Container>
   );
 }
