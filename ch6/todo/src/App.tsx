@@ -17,6 +17,7 @@ function App() {
     '리액트 공부하기',
     '운동하기',
     '책 읽기',
+    'dkdk'
   ]);
   const [toDo, setToDo] = useState('');
 
