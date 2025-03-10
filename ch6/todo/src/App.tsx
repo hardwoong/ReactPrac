@@ -15,7 +15,7 @@ const Container = styled.div`
 function App() {
   const [toDoList, setToDoList] = useState([
     '리액트 공부하기',
-    '운동하기', '으악',
+    '운동하기', 
     '책 읽기',
   ]);
   const [toDo, setToDo] = useState('');
