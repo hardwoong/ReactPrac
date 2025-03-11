@@ -29,7 +29,7 @@ function App() {
     <Container>
       <DataView toDoList={toDoList} onDelete={onDelete} />
       <TextInput value={toDo} onChange={setToDo} />
-      <Button label="추가 " />
+      <Button label="추가 " color="#304FFE" />
     </Container>
   );
 }
