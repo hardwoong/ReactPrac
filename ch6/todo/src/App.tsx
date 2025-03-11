@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import { useState } from 'react';
 import { DataView } from 'components/DataView';
 import { ToDoInput } from 'components/ToDoInput';
+import { ShowInputButton } from 'components/ShowInputButton';
 
 const Container = styled.div`
   height: 100vh;
@@ -18,23 +19,26 @@ function App() {
     '운동하기', 
     '책 읽기',
   ]);
+  const [showToDoInput, setShowToDoInput] = useState(false);
   const [toDo, setToDo] = useState('');
 
   const onDelete = (todo: string) => {
     setToDoList(toDoList.filter((item) => item !== todo));
   };
 
-  const onAdd = () => {
-    if (toDo === '') return;
-
+  const onAdd = (toDo: string) => {
     setToDoList([...toDoList, toDo]);
-    setToDo('');
+    setShowToDoInput(false);
   };
 
   return (
     <Container>
       <DataView toDoList={toDoList} onDelete={onDelete} />
-      <ToDoInput onAdd={onAdd} />
+      {showToDoInput && <ToDoInput onAdd={onAdd} />}
+      <ShowInputButton
+        show={showToDoInput}
+        onClick={() => setShowToDoInput(!showToDoInput)}
+      />
     </Container>
   );
 }
