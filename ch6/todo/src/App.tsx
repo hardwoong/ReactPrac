@@ -20,7 +20,6 @@ function App() {
     '책 읽기',
   ]);
   const [showToDoInput, setShowToDoInput] = useState(false);
-  const [toDo, setToDo] = useState('');
 
   const onDelete = (todo: string) => {
     setToDoList(toDoList.filter((item) => item !== todo));
