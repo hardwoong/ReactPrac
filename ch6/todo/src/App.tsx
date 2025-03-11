@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import { useState } from 'react';
 import { DataView } from 'components/DataView';
 import { TextInput } from 'components/TextInput';
+import { Button } from 'components/Button'; 
 
 const Container = styled.div`
   height: 100vh;
@@ -28,6 +29,7 @@ function App() {
     <Container>
       <DataView toDoList={toDoList} onDelete={onDelete} />
       <TextInput value={toDo} onChange={setToDo} />
+      <Button label="추가 " />
     </Container>
   );
 }
