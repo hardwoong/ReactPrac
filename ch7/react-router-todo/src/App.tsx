@@ -17,7 +17,7 @@ function App() {
     <Container>
       <ToDoListContextProvider>
         <DataView />
-        <InputContainer />
+        {/* <InputContainer /> */}
       </ToDoListContextProvider>
     </Container>
   );
