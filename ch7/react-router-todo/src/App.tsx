@@ -36,7 +36,7 @@ function App() {
               <NotFound>
                 404
                 <br />
-                NOT FOUNDed
+                NOT FOUND
               </NotFound>
               } />
         </Routes>
