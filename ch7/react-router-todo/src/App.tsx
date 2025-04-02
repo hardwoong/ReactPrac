@@ -14,7 +14,7 @@ const Container = styled.div`
 `;
 
 const NotFound = styled.div`
-  /* text-align: center; */
+  text-align: center;
 `;
 
 function App() {
